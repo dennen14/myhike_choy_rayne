@@ -1,17 +1,17 @@
 class SiteNavbar extends HTMLElement {
-    constructor() {
-        super();
-        this.renderNavbar();
-    }
+  constructor() {
+    super();
+    this.renderNavbar();
+  }
 
-    renderNavbar() {
-        this.innerHTML = `
+  renderNavbar() {
+    this.innerHTML = `
             <!-- Navbar: single source of truth -->
             <nav class="navbar navbar-expand-lg navbar-light bg-info">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
-                        <img src="/images/image.jpg" height="36">
-                        ElmoHikes
+                        <img src="/images/hikingLogo.png" height="36">
+                        Rayne Hikes
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@ class SiteNavbar extends HTMLElement {
                 </div>
             </nav>
         `;
-    }
+  }
 }
 
-customElements.define('site-navbar', SiteNavbar);
+customElements.define("site-navbar", SiteNavbar);
